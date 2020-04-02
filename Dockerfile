@@ -1,4 +1,4 @@
-FROM 32bit/debian:jessie AS base
+FROM debian AS base
 RUN apt-get -y update && \
     apt-get -y install ca-certificates wget unzip && \
     mkdir soldat && \
